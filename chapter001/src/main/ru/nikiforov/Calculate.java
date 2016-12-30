@@ -1,7 +1,6 @@
 package src.main.ru.nikiforov;
 
 /**
-* cout ("hello")
 * @author nikiforov
 * @since 21.12.2016
 * @version 1.0
@@ -10,11 +9,53 @@ package src.main.ru.nikiforov;
 public class Calculate{
 
 	/**
-	* Выводи на экран Hello world
+	* Класс калькулятор
 	*/
+	double result = 10.0;
+	double first = 10.0;
+	double second = 10.0;
 
-	public static void main(String[] arg) {
+	/**
+	* вычесляем сумму
+	* @param - first первый параметр 
+	* @param - first второй параметр 
+	*/
+	public void summ(double first, double second) {
 
-		System.out.println("Hello world!");
+		this.result = first + second;
+	}
+	/**
+	* вычесляем разность
+	* @param - first первый параметр 
+	* @param - first второй параметр 
+	*/
+	public void razn(double first, double second) {
+
+		this.result = first - second;
+	}
+	/**
+	* вычесляем произведени
+	* @param - first первый параметр 
+	* @param - first второй параметр 
+	*/
+	public void multi(double first, double second) {
+
+		this.result = first * second;
+	}
+	/**
+	* вычесляем деление
+	* @param - first первый параметр 
+	* @param - first второй параметр 
+	*/
+	public void delenie(double first, double second) {
+
+		this.result = first / second;
+	}
+
+	/**
+	* возвращаем результат
+	*/
+	public double getResult(){
+		return this.result;
 	}
 }

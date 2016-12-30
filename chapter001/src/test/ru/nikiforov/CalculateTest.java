@@ -16,10 +16,18 @@ import static org.junit.Assert.assertThat;
 public class CalculateTest{
 
 	@Test
-	public void whenAddOneToOneThenTwo() {
-		ByteArrayOutputStream out = new ByteArrayOutputStream();
-		System.setOut(new PrintStream(out));
-		Calculate.main(null);
+	public void whenSet10and10ReturnSumm20() {
+
+        calculate calc = new Calculate();
+        String result = calc.echo(20);
+        assertThat(result, is(20));
+    }
+}
+
+
+/*      ByteArrayOutputStream out = new ByteArrayOutputStream();
+        System.setOut(new PrintStream(out));
+        Calculate.main(null);
         assertThat(
                 out.toString(),
                 is(
@@ -28,6 +36,4 @@ public class CalculateTest{
                                 System.getProperty("line.separator")
                         )
                 )
-        );
-    }
-}
+        );*/
