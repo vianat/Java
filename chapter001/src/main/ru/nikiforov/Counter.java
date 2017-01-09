@@ -1,6 +1,6 @@
 
 
-//клласс счетчик с 2мя параметрами
+//клласс счетчик с 2мя параметрами и результатом
 public class Counter {
     static int start  = 0;
     static int finish = 10;

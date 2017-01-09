@@ -14,7 +14,7 @@ public class Triangle {
     this.b = b;
     this.c = c;
     }
-
+    // вычесляем площадь
     public double area() {
 
     double ab = distanceTo(a, b);

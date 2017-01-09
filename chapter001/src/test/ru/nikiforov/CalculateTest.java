@@ -17,7 +17,6 @@ public class CalculateTest{
 
 	@Test
 	public void whenSet10and10ReturnSumm20() {
-
         calculate calc = new Calculate();
         String result = calc.echo(20);
         assertThat(result, is(20));
@@ -31,9 +30,9 @@ public class CalculateTest{
         assertThat(
                 out.toString(),
                 is(
-                        String.format(
-                                "Hello world%s",
-                                System.getProperty("line.separator")
-                        )
+                    String.format(
+                        "Hello world%s",
+                        System.getProperty("line.separator")
+                    )
                 )
         );*/
