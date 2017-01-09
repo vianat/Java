@@ -14,11 +14,11 @@ public class Max {
         return first>second ? first : second;
     }
 
-
     //метод сравнения 3x чисел
     public int max(int first, int second, int third) {
 
-        return (first>second & first>third) ? first : 
-             ((second>first & second>third) ? second : third);
+        return (first>second & first>third) ? first : (
+            (second>first & second>third) ? second : third
+            );
     }
 }
